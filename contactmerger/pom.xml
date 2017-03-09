@@ -1,0 +1,82 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.cb</groupId>
+	<artifactId>contactmerger</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>ContactMerger</name>
+	<description>This program uses email signature caputre API which returns the contacts and the contact returned should be merged with pre-defined list of contact provided to produce a unique list based on the following criteria.
+
+- Contacts with the same first name /last name AND phone number or email address should be merged.
+
+- Merging is defined by creating a new contact that is the union of the source contacts.
+
+- The resulting contact should have lists of contact attributes (ex. list of emails, phones, addresses, etc) -- set from the source contacts.
+
+- Common attributes (ex. emails and phones) shouldn’t be loaded multiple times in the merged contact. Attribute lists should contain unique values.
+
+- If an individual contact can’t be merged then it should be added to the resulting list.
+</description>
+	<dependencies>
+<!-- 		<dependency> -->
+<!-- 			<groupId>org.glassfish.jersey.core</groupId> -->
+<!-- 			<artifactId>jersey-client</artifactId> -->
+<!-- 			<version>2.25.1</version> -->
+<!-- 		</dependency> -->
+<!-- 		<dependency> -->
+<!-- 			<groupId>org.glassfish.jersey.connectors</groupId> -->
+<!-- 			<artifactId>jersey-grizzly-connector</artifactId> -->
+<!-- 			<version>2.25.1</version> -->
+<!-- 		</dependency> -->
+
+<!-- 		<dependency> -->
+<!-- 			<groupId>org.glassfish.jersey.connectors</groupId> -->
+<!-- 			<artifactId>jersey-apache-connector</artifactId> -->
+<!-- 			<version>2.25.1</version> -->
+<!-- 		</dependency> -->
+
+<!-- 		<dependency> -->
+<!-- 			<groupId>org.glassfish.jersey.connectors</groupId> -->
+<!-- 			<artifactId>jersey-jetty-connector</artifactId> -->
+<!-- 			<version>2.25.1</version> -->
+<!-- 		</dependency> -->
+<!-- 		<dependency> -->
+<!-- 			<groupId>com.fasterxml.jackson.core</groupId> -->
+<!-- 			<artifactId>jackson-databind</artifactId> -->
+<!-- 			<version>2.6.3</version> -->
+<!-- 		</dependency> -->
+<!-- 		<dependency> -->
+<!-- 		    <groupId>org.glassfish.jersey.core</groupId> -->
+<!-- 		    <artifactId>jersey-common</artifactId> -->
+<!-- 		    <version>2.23.1</version> -->
+<!-- 		</dependency> -->
+		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-web</artifactId>
+		    <version>3.0.2.RELEASE</version>
+		</dependency>
+			
+		<dependency>
+		    <groupId>com.fasterxml.jackson.core</groupId>
+		    <artifactId>jackson-core</artifactId>
+		    <version>2.7.3</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>com.fasterxml.jackson.core</groupId>
+		    <artifactId>jackson-databind</artifactId>
+		    <version>2.7.3</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>com.fasterxml.jackson.core</groupId>
+		    <artifactId>jackson-annotations</artifactId>
+		    <version>2.7.3</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.codehaus.jackson</groupId>
+		    <artifactId>jackson-mapper-asl</artifactId>
+		    <version>1.5.0</version>
+		</dependency>
+	</dependencies>
+</project>
